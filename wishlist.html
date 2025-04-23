@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
+
+    <!-- hydrogen stylesheet -->
+    <link rel="stylesheet" href="https://hydrogen-ui.netlify.app/style.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>AutoDecore | Danh sách yêu thích</title>
+  </head>
+  <body>
+    <header>
+      <div class="hy-header-wrapper">
+        <nav class="hy-navbar p-sm">
+          <div class="hy-navbar-links-container mr-1 mb-sm">
+            <div>
+              <button type="button" class="btn hy-hamburger-btn mt-1">
+                <i class="fas fa-bars" title="menu"></i>
+              </button>
+
+              <figure class="hy-logo">
+                <a href="./index.html">
+                  <img src="./assets/Logo.png" alt="Logo Thương hiệu" style="height: 85px;" />
+                </a>
+              </figure>
+            </div>
+
+            <div>
+              <ul class="hy-navbar-links">
+                <li class="mr-1">
+                  <a class="btn primary-link logout-btn" href="./index.html"
+                    >Đăng xuất</a
+                  >
+                </li>
+                <li class="mr-1">
+                  <a href="./wishlist.html">
+                    <div class="btn btn-icon btn-icon-md badge-container">
+                      <i
+                        class="far fa-heart"
+                        title="Danh sách yêu thích"
+                        aria-hidden="true"
+                      ></i>
+                      <span
+                        class="badge badge-md badge-num top-right bg-complimentary"
+                        >3</span
+                      >
+                    </div>
+                    <span class="visually-hidden">Danh sách yêu thích</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./cart.html">
+                    <div class="btn btn-icon btn-icon-md badge-container">
+                      <i class="fas fa-shopping-cart" title="Giỏ hàng"></i>
+                      <span
+                        class="badge badge-md badge-num top-right bg-complimentary"
+                        >1</span
+                      >
+                    </div>
+                    <span class="visually-hidden"> Giỏ hàng </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hy-search-box">
+            <input
+              type="search"
+              placeholder="Tìm kiếm sản phẩm, thương hiệu và nhiều hơn nữa.."
+            />
+
+            <button class="btn hy-search-btn" type="submit">
+              <i class="fas fa-search" title="tìm kiếm"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wishlist-main flex">
+      <section class="wishlist-user-detail m-1 p-1 bg-white flex align-center">
+        <div class="user-avatar mr-1">
+          <figure class="avatar avatar-sm">
+            <img
+              class="img-responsive img-round"
+              src="./assets/avatar.jpg"
+              alt="avatar"
+            />
+          </figure>
+        </div>
+        <div>
+          <p class="txt-sm my-0">Chào bạn,</p>
+          <p class="txt-semibold my-sm">Đặng Hữu Danh</p>
+        </div>
+      </section>
+
+      <section class="wishlist-container bg-white m-1 p-1 flex-grow">
+        <header class="pl-2 border-bottom">
+          <p class="txt-md">Danh sách yêu thích của tôi (3)</p>
+        </header>
+
+        <article>
+          <a href="./products.html" class="card card-horizontal p-1 border-m product-card">
+            <div class="card-image mr-2">
+              <img
+                class="img-responsive"
+                src="./assets/cando.jpg"
+                alt="Bộ cần số kiểng"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Bộ cần số kiêng cho xe hơi</h5>
+              <small class="txt-secondary"> Thương hiệu:none</small>
+              <div class="product-rating my-1 p-sm">
+                4.7 <i class="fas fa-star"></i>
+              </div>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">513,000 VNĐ</span>
+                <span class="txt-strike-through txt-secondary mr-1">615,000 VNĐ</span>
+              </div>
+
+              <div class="card-btn-container mt-2">
+                <button class="btn complementary-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Thêm vào giỏ hàng</span>
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <button class="btn wishlist-remove-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </article>
+
+        <article>
+          <a href="./products.html" class="card card-horizontal p-1 border-m product-card">
+            <div class="card-image mr-2">
+              <img
+                class="img-responsive"
+                src="./assets/bocchangas.jpg"
+                alt="Bộ chân gas"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Bộ bọc chân gas cho xe hơi</h5>
+              <small class="txt-secondary"> Thương hiệu:none</small>
+              <div class="product-rating my-1 p-sm">
+                4.4 <i class="fas fa-star"></i>
+              </div>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">313,000 VNĐ</span>
+                <span class="txt-strike-through txt-secondary mr-1">515,000 VNĐ</span>
+              </div>
+
+              <div class="card-btn-container mt-2">
+                <button class="btn complementary-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Thêm vào giỏ hàng</span>
+                </button>
+              </div>
+            </div>
+          </a>
+          <button class="btn wishlist-remove-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </article>
+
+        <article>
+          <a href="./products.html" class="card card-horizontal p-1 border-m product-card">
+            <div class="card-image mr-2">
+              <img
+                class="img-responsive"
+                src="./assets/volang.jpg"
+                alt="hình ảnh sản phẩm"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Bộ vô lăng tháo rời cho xe hơi</h5>
+              <small class="txt-secondary"> Thương hiệu:none</small>
+              <div class="product-rating my-1 p-sm">
+                4.7 <i class="fas fa-star"></i>
+              </div>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">650,000 VNĐ</span>
+                <span class="txt-strike-through txt-secondary mr-1">800,000 VNĐ</span>
+              </div>
+
+              <div class="card-btn-container mt-2">
+                <button class="btn complementary-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Thêm vào giỏ hàng</span>
+                </button>
+              </div>
+            </div>
+          </a>
+          <button class="btn wishlist-remove-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <div class="bg-black txt-white txt-center">
+      <footer class="py-2">
+        <p>Made with ❤️ by Danh</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/ddcassss" class="mr-sm"><i class="fab fa-facebook-square" title="Facebook"></i></a>
+          <a href="https://www.instagram.com/bb.cass_/" class="mr-sm"><i class="fab fa-instagram" title="Instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

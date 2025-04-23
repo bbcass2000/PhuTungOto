@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
+
+    <!-- hydrogen stylesheet -->
+    <link rel="stylesheet" href="https://hydrogen-ui.netlify.app/style.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Tất Cả Sản Phẩm | Phụ Tùng Ô Tô</title>
+  </head>
+  <body>
+    <header>
+      <div class="hy-header-wrapper">
+        <nav class="hy-navbar p-sm">
+          <div class="hy-navbar-links-container mr-1 mb-sm">
+            <div>
+              <button type="button" class="btn hy-hamburger-btn mt-1">
+                <i class="fas fa-bars" title="menu"></i>
+              </button>
+
+              <figure class="hy-logo">
+                <a href="./index.html">
+                  <img src="./assets/Logo.png" alt="Logo Thương Hiệu" style="height: 85px;" />
+                </a>
+              </figure>
+            </div>
+
+            <div>
+              <ul class="hy-navbar-links">
+                <li class="mr-1">
+                  <a class="btn primary-link login-btn" href="./index.html"
+                    >Đăng xuất</a
+                  >
+                </li>
+                <li class="mr-1">
+                  <a href="./wishlist.html">
+                    <div class="btn btn-icon btn-icon-md badge-container">
+                      <i
+                        class="far fa-heart"
+                        title="Danh sách yêu thích"
+                        aria-hidden="true"
+                      ></i>
+                      <span
+                        class="badge badge-md badge-num top-right bg-complimentary"
+                        >3</span
+                      >
+                    </div>
+                    <span class="visually-hidden">Danh sách yêu thích</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./cart.html">
+                    <div class="btn btn-icon btn-icon-md badge-container">
+                      <i class="fas fa-shopping-cart" title="Giỏ hàng"></i>
+                      <span
+                        class="badge badge-md badge-num top-right bg-complimentary"
+                        >1</span
+                      >
+                    </div>
+                    <span class="visually-hidden"> Giỏ hàng </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hy-search-box">
+            <input
+              type="search"
+              placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+            />
+
+            <button class="btn hy-search-btn" type="submit">
+              <i class="fas fa-search" title="Tìm kiếm"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex">
+      <aside class="filter-section mt-1 p-1 ml-1">
+        <header class="flex justify-between">
+          <h5>Bộ lọc</h5>
+          <button class="btn btn-link">Xóa tất cả</button>
+        </header>
+
+        <section>
+          <h6>Giá (VNĐ)</h6>
+          <input
+            type="range"
+            class="w-100"
+            min="100000"
+            max="10000000"
+            step="10000"
+            list="tickmarks"
+          />
+
+          <datalist id="tickmarks">
+            <option value="500000" label="500k"></option>
+            <option value="1000000" label="1 triệu"></option>
+            <option value="5000000" label="5 triệu"></option>
+            <option value="10000000" label="10 triệu"></option>
+            <option value="50000000" label="50 triệu"></option>
+            <option value="100000000" label="100 triệu"></option>
+          </datalist>
+        </section>
+
+        <section>
+          <h6>Danh mục</h6>
+
+          <ul class="pl-1">
+            <li>
+              <label class="flex align-center">
+                <input type="checkbox" class="mr-1" name="vehicle mats" />
+                Đồ chơi xe
+              </label>
+            </li>
+            <li>
+              <label class="flex align-center">
+                <input type="checkbox" class="mr-1" name="tyre and wheel" />
+                Lốp và bánh xe
+              </label>
+            </li>
+            <li>
+              <label class="flex align-center">
+                <input type="checkbox" class="mr-1" name="vehicle cleaners" />
+                Dung dịch vệ sinh xe
+              </label>
+            </li>
+            <li>
+              <label class="flex align-center">
+                <input type="checkbox" class="mr-1" name="vehicle lights" />
+                Phim cách nhiệt
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h6>Đánh Giá Khách Hàng</h6>
+        
+          <ul class="pl-1">
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="four and above"
+                  class="mr-1"
+                />
+        
+                Từ 4 <i class="fas fa-star px-sm"></i> trở lên
+              </label>
+            </li>
+        
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="three and above"
+                  class="mr-1"
+                />
+        
+                Từ 3 <i class="fas fa-star px-sm"></i> trở lên
+              </label>
+            </li>
+        
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="two and above"
+                  class="mr-1"
+                />
+        
+                Từ 2 <i class="fas fa-star px-sm"></i> trở lên
+              </label>
+            </li>
+        
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="one and above"
+                  class="mr-1"
+                />
+        
+                Từ 1 <i class="fas fa-star px-sm"></i> trở lên
+              </label>
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h6>Sắp xếp</h6>
+        
+          <ul class="pl-1">
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="sort"
+                  value="low to high"
+                  class="mr-1"
+                />
+        
+                Giá tăng dần
+              </label>
+            </li>
+        
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="sort"
+                  value="high to low"
+                  class="mr-1"
+                />
+        
+                Giá giảm dần
+              </label>
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h6>Tình trạng</h6>
+          <label class="flex align-center pl-1">
+            <input type="checkbox" class="mr-1" name="out of stock" />
+            Hết hàng
+          </label>
+        </section>
+        </aside>
+        
+        <section class="products-section p-1 my-1 mx-1 flex-grow">
+          <p class="h5">Hiển thị tất cả sản phẩm</p>
+        
+          <div class="product-container grid">
+            <article
+              class="card card-vertical p-1 border-m product-card card-icon"
+            >
+              <div class="card-image">
+                <img
+                  class="img-responsive"
+                  src="./assets/po.jpg"
+                  alt="hình sản phẩm"
+                />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Ống xã TVT cho xe hơi</h5>
+                <small class="txt-secondary"> Thương hiệu:none</small>
+                <div class="product-rating my-1 p-sm">
+                  4.5 <i class="fas fa-star"></i>
+                </div>
+                <p class="txt-rg">
+                  Gắn vô nổ ầm ầm nẹt pô cách kiểu bao ngầu 
+                </p>
+        
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">9.000.000₫</span>
+                  <span class="txt-strike-through txt-secondary mr-1">15.000.000₫</span>
+                </div>
+        
+                <div class="card-btn-container">
+                  <button class="btn complementary-btn w-100">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Thêm vào giỏ</span>
+                  </button>
+        
+                  <button class="btn icon-btn-primary btn-wishlist">
+                    <i class="far fa-heart" title="thêm vào yêu thích"></i>
+                  </button>
+                </div>
+              </div>
+            </article>        
+
+            <article class="card card-vertical p-1 border-m product-card card-icon">
+              <div class="card-image">
+                <img class="img-responsive" src="./assets/car-pocket.jpeg" alt="hình sản phẩm" />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Túi Treo Đa Năng Cho Xe Hơi</h5>
+                <small class="txt-secondary">Thương hiệu:none</small>
+                <div class="product-rating my-1 p-sm">
+                  4.3 <i class="fas fa-star"></i>
+                </div>
+                <p class="txt-rg">
+                  Nhiều ngăn lưu trữ tiện lợi, bao gồm túi giúp bạn dễ dàng nhìn thấy đồ dùng.
+                </p>
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">680.000₫</span>
+                  <span class="txt-strike-through txt-secondary mr-1">999.000₫</span>
+                </div>
+                <div class="card-btn-container">
+                  <button class="btn complementary-btn w-100">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Thêm vào giỏ</span>
+                  </button>
+                  <button class="btn icon-btn-primary btn-wishlist">
+                    <i class="far fa-heart" title="thêm vào yêu thích"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card card-vertical p-1 border-m product-card card-icon">
+              <div class="card-image">
+                <img class="img-responsive" src="./assets/nhot.jpg" alt="hình sản phẩm" />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Nhớt động cơ xe hơi</h5>
+                <small class="txt-secondary">Thương hiệu:none</small>
+                <div class="product-rating my-1 p-sm">
+                  4.9 <i class="fas fa-star"></i>
+                </div>
+                <p class="txt-rg">
+                  Bôi trơn động cơ, giúp xe vận hành êm ái bức phá thời gian
+                </p>
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">3.600.000₫</span>
+                  <span class="txt-strike-through txt-secondary mr-1">4.200.000₫</span>
+                </div>
+                <div class="card-btn-container">
+                  <button class="btn complementary-btn w-100">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Thêm vào giỏ</span>
+                  </button>
+                  <button class="btn icon-btn-primary btn-wishlist">
+                    <i class="far fa-heart" title="thêm vào yêu thích"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card card-vertical p-1 border-m product-card card-icon">
+              <div class="card-image">
+                <img class="img-responsive" src="./assets/lopxe.jpg" alt="hình sản phẩm" />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Lốp xe hơi trọn bộ 4 bánh</h5>
+                <small class="txt-secondary">Thương hiệu:none</small>
+                <div class="product-rating my-1 p-sm">
+                  4.5 <i class="fas fa-star"></i>
+                </div>
+                <p class="txt-rg">
+                  Trọn bộ lốp xe có thể tặng kèm lóp dự phòng nếu là thành viên VIP.
+                </p>
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">7.000.000₫</span>
+                  <span class="txt-strike-through txt-secondary mr-1">7.400.000₫</span>
+                </div>
+                <div class="card-btn-container">
+                  <button class="btn complementary-btn w-100">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Thêm vào giỏ</span>
+                  </button>
+                  <button class="btn icon-btn-primary btn-wishlist">
+                    <i class="far fa-heart" title="thêm vào yêu thích"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card card-vertical p-1 border-m product-card card-icon">
+              <div class="card-image">
+                <img class="img-responsive" src="./assets/2 phanh dia.jpg" alt="hình sản phẩm" />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Bộ phanh đĩa kèm má phanh</h5>
+                <small class="txt-secondary">Thương hiệu:none</small>
+                <div class="product-rating my-1 p-sm">
+                  5 <i class="fas fa-star"></i>
+                </div>
+                <p class="txt-rg">
+                  Giúp an toàn hơn khi vận hành dài bảo vệ gia đình và chính bạn.
+                </p>
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">9.999.000₫</span>
+                  <span class="txt-strike-through txt-secondary mr-1">13.000.000₫</span>
+                </div>
+                <div class="card-btn-container">
+                  <button class="btn complementary-btn w-100">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Thêm vào giỏ</span>
+                  </button>
+                  <button class="btn icon-btn-primary btn-wishlist">
+                    <i class="far fa-heart" title="thêm vào yêu thích"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            
+            <article class="card card-vertical p-1 border-m product-card card-icon">
+              <div class="card-image">
+                <img class="img-responsive" src="./assets/binhnos.webp" alt="hình sản phẩm" />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Bình NOS tăng công suất cho xe</h5>
+                <small class="txt-secondary">Thương hiệu:none</small>
+                <div class="product-rating my-1 p-sm">
+                  4.9 <i class="fas fa-star"></i>
+                </div>
+                <p class="txt-rg">
+                  Tăng công suất tức thời cho xe, đua bơi đều được, cần thay thế bình Nos khi sử dụng hết, cẩn thận khi sử dụng an toàn là trên hết.
+                </p>
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">30.000.000₫</span>
+                  <span class="txt-strike-through txt-secondary mr-1">45.000.000₫</span>
+                </div>
+                <div class="card-btn-container">
+                  <button class="btn complementary-btn w-100">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Thêm vào giỏ</span>
+                  </button>
+                  <button class="btn icon-btn-primary btn-wishlist">
+                    <i class="far fa-heart" title="thêm vào yêu thích"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            
+            <article
+            class="card card-vertical p-1 border-m product-card card-icon"
+          >
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/turbo.jpg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Turbo tăng áp cho xe hơi bằng khí tự nhiên</h5>
+              <small class="txt-secondary"> Thương hiệu:none</small>
+              <div class="product-rating my-1 p-sm">
+                5 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Tăng công suất động cơ mạnh mẻ hơn phù hợp mọi động cơ bền bỏ hơn.
+              </p>
+          
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">54.000.000</span>
+                <span class="txt-strike-through txt-secondary mr-1">69.000.000</span>
+              </div>
+          
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Thêm vào giỏ</span>
+                </button>
+          
+                <button class="btn icon-btn-primary btn-wishlist">
+                  <i class="far fa-heart" title="add to wishlist"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          
+          <article
+            class="card card-vertical p-1 border-m product-card card-icon"
+          >
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/bodykit.jpg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Body kit dành cho xe hơi </h5>
+              <small class="txt-secondary"> Thương hiệu:none</small>
+              <div class="product-rating my-1 p-sm">
+                4.5 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Bộ body kit giúp xe trông thể thao mạnh mẻ hơn, thể hiện cá tính cá nhân cho chủ xe
+              </p>
+          
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">60.000.000</span>
+                <span class="txt-strike-through txt-secondary mr-1">70.000.000</span>
+                <span class="discount-percent p-rg">Giá tùy vào các dòng xe</span>
+              </div>
+          
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Thêm vào giỏ</span>
+                </button>
+          
+                <button class="btn icon-btn-primary btn-wishlist">
+                  <i class="far fa-heart" title="add to wishlist"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          
+          
+          </div>
+          </section>
+          </main>
+          
+           <!-- footer -->
+        <div class="bg-black txt-white txt-center">
+          <footer class="py-2">
+            <p>Made with ❤️ by Danh</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/ddcassss" class="mr-sm"><i class="fab fa-facebook-square" title="Facebook"></i></a>
+              <a href="https://www.instagram.com/bb.cass_/" class="mr-sm"><i class="fab fa-instagram" title="Instagram"></i></a>
+            </div>
+          </footer>
+        </div>
+          </body>
+          </html>
+          

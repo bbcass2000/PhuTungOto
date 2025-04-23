@@ -1,0 +1,7 @@
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.GeneratedMSBuildEditorConfig.editorconfig
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.AssemblyInfoInputs.cache
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.AssemblyInfo.cs
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.csproj.CoreCompileInputs.cache
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.MvcApplicationPartsAssemblyInfo.cache
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.RazorAssemblyInfo.cache
+D:\PhutungOto\PhuTungOtoRedparts\RedPartsAspNet_Project\obj\Debug\net6.0\RedPartsAspNet.RazorAssemblyInfo.cs

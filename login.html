@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
+
+    <!-- hydrogen stylesheet -->
+    <link rel="stylesheet" href="https://hydrogen-ui.netlify.app/style.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Phụ Tùng Ô Tô | Đăng Nhập</title>
+  </head>
+  <body>
+    <header>
+      <div class="hy-header-wrapper">
+        <nav class="hy-navbar p-sm">
+          <div class="hy-navbar-links-container mr-1 mb-sm">
+            <div>
+              <button type="button" class="btn hy-hamburger-btn mt-1">
+                <i class="fas fa-bars" title="menu"></i>
+              </button>
+
+              <figure class="hy-logo">
+                <a href="./index.html">
+                  <img src="./assets/Logo.png" alt="Logo thương hiệu" style="height: 85px;" />
+                </a>
+              </figure>
+            </div>
+
+            <div>
+              <ul class="hy-navbar-links">
+                <li class="mr-1">
+                  <a class="btn primary-link login-btn" href="./signup.html">Đăng ký</a>
+                </li>
+                <li class="mr-1">
+                  <a href="./wishlist.html">
+                    <i class="far fa-heart" title="Danh sách yêu thích" aria-hidden="true"></i>
+                    <span class="visually-hidden">Danh sách yêu thích</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./cart.html">
+                    <i class="fas fa-shopping-cart" title="Giỏ hàng"></i>
+                    <span class="visually-hidden"> Giỏ hàng </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hy-search-box">
+            <input
+              type="search"
+              placeholder="Tìm kiếm sản phẩm, thương hiệu và nhiều hơn..."
+            />
+
+            <button class="btn hy-search-btn" type="submit">
+              <i class="fas fa-search" title="Tìm kiếm"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main-wrapper">
+      <main>
+        <div class="login-form-wrapper flex flex-center">
+          <article class="login flex flex-column mx-1">
+            <div class="login__message p-1 flex-grow">
+              <h2>Đăng Nhập</h2>
+              <p>Truy cập đơn hàng, danh sách yêu thích và đề xuất của bạn</p>
+            </div>
+            <div class="login__form mt-1 p-1 flex-grow">
+              <form>
+                <div>
+                  <label for="input" class="form-label txt-md field-required">
+                    Địa chỉ Email
+                  </label>
+                  <input
+                    type="text"
+                    class="form-field my-sm p-sm border-sm w-100"
+                    placeholder="abc@gmail.com"
+                    id="input"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="password"
+                    class="form-label txt-md field-required"
+                  >
+                    Mật khẩu
+                  </label>
+
+                  <div class="input-icon">
+                    <input
+                      type="password"
+                      class="form-field my-sm p-sm border-sm w-100"
+                      placeholder="*********"
+                      id="password"
+                      required
+                    />
+
+                    <span class="show-password-icon-container">
+                      <i class="fas fa-eye-slash"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between align-center mt-2">
+                  <span>
+                    <input class="mr-sm" type="checkbox" id="remember-me" />
+                    <label for="remember-me"> Ghi nhớ đăng nhập</label>
+                  </span>
+
+                  <a href="#" class="primary-link">Quên mật khẩu?</a>
+                </div>
+
+                <button
+                  class="btn login-submit mt-1 complementary-btn w-100"
+                  type="submit"
+                >
+                  Đăng Nhập
+                </button>
+              </form>
+
+              <div class="txt-center mt-1 primary-link">
+                <a href="./signup.html">
+                  Tạo tài khoản mới <i class="fas fa-chevron-circle-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+
+     <!-- footer -->
+     <div class="bg-black txt-white txt-center">
+      <footer class="py-2">
+        <p>Made with ❤️ by Danh</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/ddcassss" class="mr-sm"><i class="fab fa-facebook-square" title="Facebook"></i></a>
+          <a href="https://www.instagram.com/bb.cass_/" class="mr-sm"><i class="fab fa-instagram" title="Instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

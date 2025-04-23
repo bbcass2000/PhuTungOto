@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
+
+    <!-- hydrogen stylesheet -->
+    <link rel="stylesheet" href="https://hydrogen-ui.netlify.app/style.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Phụ Tùng Ô Tô | Trang Chủ</title>
+  </head>
+  <body>
+    <header>
+      <div class="hy-header-wrapper">
+        <nav class="hy-navbar p-sm">
+          <div class="hy-navbar-links-container mr-1 mb-sm">
+            <div>
+              <button type="button" class="btn hy-hamburger-btn mt-1">
+                <i class="fas fa-bars" title="menu"></i>
+              </button>
+
+              <figure class="hy-logo">
+                <a href="./index.html">
+                  <img src="./assets/Logo.png" alt="Logo Thương Hiệu" style="height: 85px;" />
+
+                </a>
+              </figure>
+            </div>
+
+            <div>
+              <ul class="hy-navbar-links">
+                <li class="mr-1">
+                  <a class="btn primary-link signup-btn" href="./signup.html"
+                    >Đăng ký</a
+                  >
+                </li>
+                <li class="mr-1">
+                  <a class="btn primary-link login-btn" href="./login.html"
+                    >Đăng nhập</a
+                  >
+                </li>
+                <li class="mr-1">
+                  <a href="./wishlist.html">
+                    <div class="btn btn-icon btn-icon-md badge-container">
+                      <i
+                        class="far fa-heart"
+                        title="Yêu thích"
+                        aria-hidden="true"
+                      ></i>
+                      <span
+                        class="badge badge-md badge-num top-right bg-complimentary"
+                        >3</span
+                      >
+                    </div>
+                    <span class="visually-hidden">Yêu thích</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./cart.html">
+                    <div class="btn btn-icon btn-icon-md badge-container">
+                      <i class="fas fa-shopping-cart" title="Giỏ hàng"></i>
+                      <span
+                        class="badge badge-md badge-num top-right bg-complimentary"
+                        >1</span
+                      >
+                    </div>
+                    <span class="visually-hidden">Giỏ hàng</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hy-search-box">
+            <input
+              type="search"
+              placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+            />
+
+            <button class="btn hy-search-btn" type="submit">
+              <i class="fas fa-search" title="Tìm kiếm"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="swiper my-1">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide current-slide">
+              <a href="./products.html">
+                <img src="./assets/slider.webp" alt="Mua ngay"/>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="./products.html">
+                <img src="./assets/slider2.webp" alt="Mua ngay" />
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="./products.html">
+                <img src="./assets/slider3.webp" alt="Mua ngay" />
+              </a>
+            </div>
+          </div>
+          
+
+          <div class="swiper-button-prev">
+            <i class="fas fa-angle-left" title="Trang trước"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-angle-right" title="Trang sau"></i>
+          </div>
+        </div>
+      </section>
+
+      <section
+  class="trending-product-container justify-center my-1 flex mx-sm gap-1"
+>
+  <div class="trending-product-list-container bg-white">
+    <h2 class="txt-center">Sản phẩm đang thịnh hành</h2>
+    <div class="trending-product-list flex">
+      <article class="txt-center">
+        <a href="./products.html">
+          <figure class="mx-auto">
+            <img src="./assets/car-pocket.jpeg" alt="Hình ảnh sản phẩm" style="width: 95%;" />
+          </figure>
+
+          <div>
+            <p class="txt-rg my-1">Túi đựng đồ đa năng</p>
+
+            <div>
+              <span class="txt-md pr-1 txt-bold">680.000 VNĐ</span>
+              <span class="txt-strike-through txt-secondary mr-1">
+                999.000 VNĐ
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="txt-center">
+        <a href="./products.html">
+          <figure class="mx-auto">
+            <img src="./assets/lopxe.jpg" alt="Hình ảnh sản phẩm" style="width: 90%;"/>
+          </figure>
+
+          <div>
+            <p class="txt-rg my-1">Lốp cho xe ô tô</p>
+
+            <div>
+              <span class="txt-md pr-1 txt-bold">7.000.000 VNĐ</span>
+              <span class="txt-strike-through txt-secondary mr-1">
+                7.400.000 VNĐ
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="txt-center">
+        <a href="./products.html">
+          <figure class="mx-auto">
+            <img src="./assets/nhot.jpg" alt="Hình ảnh sản phẩm" style="width: 90%;"/>
+          </figure>
+
+          <div>
+            <p class="txt-rg my-1"> Dầu nhớt cho xe ô tô</p>
+
+            <div>
+              <span class="txt-md pr-1 txt-bold">3.600.000 VNĐ</span>
+              <span class="txt-strike-through txt-secondary mr-1">
+                4.200.000 VNĐ
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="txt-center">
+        <a href="./products.html">
+          <figure class="mx-auto">
+            <img src="./assets/po.jpg" alt="Hình ảnh sản phẩm" style="width: 90%;"/>
+          </figure>
+
+          <div>
+            <p class="txt-rg my-1">Pô phụ tùng cho xe ô tô</p>
+
+            <div>
+              <span class="txt-md pr-1 txt-bold">9.000.000 VNĐ</span>
+              <span class="txt-strike-through txt-secondary mr-1">
+                15.000.000 VNĐ
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="txt-center">
+        <a href="./products.html">
+          <figure class="mx-auto">
+            <img src="./assets/2 phanh dia.jpg" alt="Hình ảnh sản phẩm" />
+          </figure>
+
+          <div>
+            <p class="txt-rg my-1">Thắng đĩa đồ chơi xe ô tô</p>
+
+            <div>
+              <span class="txt-md pr-1 txt-bold">9.999.999 VNĐ</span>
+              <span class="txt-strike-through txt-secondary mr-1">
+                13.000.000 VNĐ
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </div>
+
+  <figure class="offer-zone-container mx-auto txt-center bg-white">
+    <a href="./products.html">
+      <img src="./assets/offer-zone.jpg" alt="Khu vực khuyến mãi" />
+    </a>
+  </figure>
+</section>
+
+
+<section class="grid grid-50-50 txt-center gap-1 mx-auto below-trending-banner mb-2">
+  <div class="bg-white pb-1">
+    <h4>PHỤ KIỆN PHIM XE HƠI</h4>
+
+    <a href="./products.html" class="btn btn-complementary-outline txt-bold mt-1">
+      Mua ngay
+    </a>
+
+    <figure class="mt-2 mx-auto">
+      <img
+        src="./assets/phimkinh.webp" 
+        alt="Phụ kiện phim xe hơi"
+        style="width: 100%;"
+      />
+    </figure>
+  </div>
+
+  <div class="bg-white pb-1">
+    <h4>PHỤ KIỆN TĂNG CÔNG SUẤT XE HƠI</h4>
+
+    <a href="./products.html" class="btn btn-complementary-outline txt-bold mt-1">
+      Mua ngay
+    </a>
+
+    <figure class="mt-2 mx-auto">
+      <img
+        src="./assets/binhnos.webp"
+        alt="Phụ kiện tăng công suất xe hơi"
+        style="width: 100%;"
+      />
+    </figure>
+  </div>
+</section>
+
+<section class="mx-sm bg-white flex flex-column p-sm my-1">
+  <header class="flex justify-between mx-2 pb-sm border-bottom">
+    <div>
+      <h4>Phụ kiện dành cho xe của bạn</h4>
+    </div>
+    <button class="btn btn-primary">
+      <a href="./products.html" class="txt-center">Xem tất cả</a>
+    </button>
+  </header>
+
+  <div class="suggested-items-container flex px-1">
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img src="./assets/Android Elliview Oto.jpg" alt="Màn hình Android mới" />
+        </figure>
+        <div>
+          <p class="txt-rg my-1">Màn hình Android cho xe hơi</p>
+          <div>
+            <span class="txt-md pr-1 txt-bold">7.400.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">8.000.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/cando.jpg"
+            alt="Bộ cần số kiểng"
+            style="width: 80%;"
+          />
+        </figure>
+
+        <div>
+          <p class="txt-rg my-1">Bộ cần số kiêng cho xe hơi</p>
+
+          <div>
+            <span class="txt-md pr-1 txt-bold">513.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">615.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/camhanhtrinh.jpg"
+            alt="Bộ cam hành trình"
+            style="width: 80%;"
+          />
+        </figure>
+
+        <div>
+          <p class="txt-rg my-1">Bộ camera hành trình cho xe hơi</p>
+
+          <div>
+            <span class="txt-md pr-1 txt-bold">7.130.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">8.200.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/bocchangas.jpg"
+            alt="Bộ chân gas"
+            style="width: 50%;"
+          />
+        </figure>
+
+        <div>
+          <p class="txt-rg my-1">Bộ bọc chân gas cho xe hơi</p>
+
+          <div>
+            <span class="txt-md pr-1 txt-bold">313.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">515.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/maphanh.jpg"
+            alt="Bộ má phanh"
+            style="width: 65%;"
+          />
+        </figure>
+    
+        <div>
+          <p class="txt-rg my-1">Bộ má phanh thắng đĩa</p>
+    
+          <div>
+            <span class="txt-md pr-1 txt-bold">650.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">800.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/ruaxe.jpg"
+            alt="Hình ảnh sản phẩm"
+            style="width: 70%;"
+          />
+        </figure>
+    
+        <div>
+          <p class="txt-rg my-1">Bộ chăm sóc xe Pidilite Motomax</p>
+    
+          <div>
+            <span class="txt-md pr-1 txt-bold">313.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">515.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  </div>
+</section>
+
+<section class="mx-sm bg-white flex flex-column p-sm my-1">
+  <header class="flex justify-between mx-2 pb-sm border-bottom">
+    <div>
+      <h4>Sản phẩm bạn có thể thích...</h4>
+      <span class="h6 txt-secondary">Đã đến lúc làm mới món hàng bạn đã mua gần đây</span>
+    </div>
+    <button class="btn btn-primary">
+      <a href="./products.html" class="txt-center">Xem tất cả</a>
+    </button>
+  </header>
+
+  <div class="suggested-items-container flex px-1">
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/phuoc.jpg"
+            alt="Bộ phuộc giảm sốc"
+            style="width: 80%;"
+          />
+        </figure>
+        <div>
+          <p class="txt-rg my-1">Bộ phuộc giảm sốc nâng hạ cho xe hơi</p>
+          <div>
+            <span class="txt-md pr-1 txt-bold">50.500.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">74.000.000</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/cando.jpg"
+            alt="Bộ cần số kiểng"
+            style="width: 80%;"
+          />
+        </figure>
+
+        <div>
+          <p class="txt-rg my-1">Bộ cần số kiêng cho xe hơi</p>
+
+          <div>
+            <span class="txt-md pr-1 txt-bold">513.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">615.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/mam.jpg"
+            alt="Bộ mâm xe hơi"
+            style="width: 60%;"
+          />
+        </figure>
+
+        <div>
+          <p class="txt-rg my-1">Bộ mâm kiểng đến từ Whoolo</p>
+
+          <div>
+            <span class="txt-md pr-1 txt-bold">22.000.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">25.000.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/po.jpg"
+            alt="Bộ ống xã"
+            style="width: 50%;"
+          />
+        </figure>
+
+        <div>
+          <p class="txt-rg my-1">Bộ ống xã dành cho xe hơi TVT</p>
+
+          <div>
+            <span class="txt-md pr-1 txt-bold">10.000.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">15.000.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/volang.jpg"
+            alt="Vô lăng"
+            style="width: 65%;"
+          />
+        </figure>
+    
+        <div>
+          <p class="txt-rg my-1">Bộ vô lăng tháo rời cho xe hơi</p>
+    
+          <div>
+            <span class="txt-md pr-1 txt-bold">650.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">800.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+    
+    <article class="txt-center">
+      <a href="./products.html">
+        <figure class="mx-auto">
+          <img
+            src="./assets/ghe.jpg"
+            alt="Bộ ghế đua"
+            style="width: 80%;"
+          />
+        </figure>
+    
+        <div>
+          <p class="txt-rg my-1">Bộ ghế đua cho xe hơi</p>
+    
+          <div>
+            <span class="txt-md pr-1 txt-bold">2.400.000₫</span>
+            <span class="txt-strike-through txt-secondary mr-1">3.000.000₫</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  </div>
+</section>
+        </main>
+         </body>
+
+        
+        <div class="bg-black txt-white txt-center">
+          <footer class="py-2">
+            <p>Made with ❤️ by Danh</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/ddcassss" class="mr-sm"><i class="fab fa-facebook-square" title="Facebook"></i></a>
+              <a href="https://www.instagram.com/bb.cass_/" class="mr-sm"><i class="fab fa-instagram" title="Instagram"></i></a>
+              
+            </div>
+          </footer>
+        </div>
+      
+        <script src="./js/swiper.js"></script>
+        </html>
+        
